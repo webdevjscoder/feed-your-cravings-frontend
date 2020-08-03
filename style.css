@@ -2,17 +2,39 @@ header {
     border: 1px solid red;
 }
 
-.meal-card {
-    border: 1px solid red;
-    margin: 20px;
-    width: fit-content;
-    padding: 30px;
-    border-radius: 25px;
-    background-color: white;
+main {
+    display: flex;
 }
 
-.meal-list {
+.category-container {
+    width: fit-content;
+}
+
+.menu-list {
+    border: 1px solid red;
+    padding: 20px;
+}
+
+.meal-title {
+    display: none;
+}
+
+.meal-container {
+    border: 1px solid red;
+    width: 100%;
+}
+
+.meal-container p {
+    margin-left: 25px;
+}
+
+.meal-card {
+    margin: 25px;
+    border: 1px solid red;
+    width: fit-content;
+}
+
+.meal-card ul {
     list-style: none;
-    padding: 15px;
-    margin-left: 10px;
+    padding: 30px;
 }
