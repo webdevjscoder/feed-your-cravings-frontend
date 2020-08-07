@@ -6,11 +6,15 @@ main {
     display: flex;
 }
 
-.category-container {
-    width: fit-content;
+#category-container {
+    display: none;
 }
 
-.menu-list {
+.meals {
+    display: none;
+}
+
+/* .menu-list {
     border: 1px solid red;
     padding: 20px;
 }
@@ -19,12 +23,12 @@ main {
     display: none;
 }
 
-.meal-container {
+#meal-container {
     border: 1px solid red;
     width: 100%;
 }
 
-.meal-container p {
+#meal-container p {
     margin-left: 25px;
 }
 
@@ -37,4 +41,4 @@ main {
 .meal-card ul {
     list-style: none;
     padding: 30px;
-}
+} */

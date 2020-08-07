@@ -13,41 +13,19 @@
     </header>
 
     <main>
-      <div class='category-container'>
+      <div id='category-container'>
+        <form id="category-form">
+          <h3>Add Meal</h3>
+          <label>Name:</label>
+          <input type='text' name='name' value='' placeholder="Mediterranean, Peruvian, etc...">
+          <input type='submit' name='submit' value='Submit'>
+        </form>
         <!-- Add Categories -->
-        <!-- <div class='menu-list' data-id="${category.id}"> -->
-          <!-- display menu of categories first -->
-            <!-- <p>Mexican</p> -->
-            <!-- then display meal titles after clicking on category -->
-            <!-- <div class='meal-title'>
-              <ul>
-                <li>Tacos</li>
-                <li>Burritos</li>
-                <li>Torta</li>
-              </ul>
-            </div>
-          </div>
-          <div class='menu-list' data-id="${category.id}">
-            <p>Chinese</p>
-            <div class='meal-title'>
-              <ul>
-                <li>Orange Chicken Combo</li>
-                <li>Chow mein and rice combo</li>
-              </ul>
-            </div>
-          </div>
-        </div> -->
       </div>
-      <!-- display meal that user clicks -->
-      <div class='meal-container'>
-      <!--  <p>Mexican</p>
-        <div class='meal-card'>
-          <ul>
-            <li>Tacos</li>
-            <li>some description</li>
-            <li>$25.00</li>
-          </ul>
-        </div>-->
+      <p>Create your own meal!<button id='add-new-meal'>Add a new meal</button></p>
+        <!-- display meal that user clicks -->
+      <div id='meal-container'>
+        <!-- Add Meals -->
       </div> 
     </main>
 
