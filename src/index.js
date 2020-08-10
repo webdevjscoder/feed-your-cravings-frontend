@@ -33,7 +33,7 @@ function createMenu(categoryObj) {
         mealContainer.innerHTML += `
             <div class="category" data-category-id="category-${category.id}">
                 <a class='category-link' href="#">${category.attributes.name}</a>
-                <button class='delete-category-btn' data-category-delete-id='${category.id}'>X</button>
+                <button class='delete-category-btn' data-category-delete-id='${category.id}'>x</button>
                 <ul class="meals">
                 </ul>
             </div>
@@ -58,9 +58,9 @@ function createMenu(categoryObj) {
         // console.log(mealLink)
         const ul = document.querySelector(`[data-category-id="category-${meal.relationships.category.data.id}"]`).querySelector('.meals')
         ul.innerHTML += `
-            <li>${meal.attributes.name}</li>
-            <li>${meal.attributes.description}</li>
-            <li>$${meal.attributes.price}</li>
+            <li class='meal-title'>${meal.attributes.name}</li>
+            <li><em>Description:</em> ${meal.attributes.description}</li>
+            <li><em>Price:</em> $${meal.attributes.price}</li>
         `
         mealLink.addEventListener('click', (e) => {
             e.preventDefault();
